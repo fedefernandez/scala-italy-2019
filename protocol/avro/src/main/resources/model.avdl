@@ -1,0 +1,19 @@
+@namespace("fortysevendeg")
+protocol TodoModel {
+  record CreateTodoItemRequest {
+    string text;
+    boolean completed;
+    array<string> tags;
+  }
+
+  record GetTodoItemRequest {
+    int id;
+  }
+
+  record TodoItem {
+    int id;
+    string text;
+    boolean completed;
+    array<string> tags;
+  }
+}

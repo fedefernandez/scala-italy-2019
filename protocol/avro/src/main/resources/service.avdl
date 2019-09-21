@@ -1,0 +1,11 @@
+@namespace("fortysevendeg")
+protocol TodoService {
+
+  import idl "model.avdl";
+
+  TodoItem
+    createTodoItem(CreateTodoItemRequest request);
+  TodoItem
+    getTodoItem(GetTodoItemRequest request);
+
+}
